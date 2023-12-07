@@ -14,7 +14,10 @@ export class BooksComponent implements OnInit{
   ngOnInit(): void {
     
   }
+  
+  src : string = 'https://m.media-amazon.com/images/I/51E2055ZGUL._SL1000_.jpg'
+  name : string = 'Clean Code'
+  author : string = 'Robert C Martin';
 
-  author : string = "Maruf";
 
 }
