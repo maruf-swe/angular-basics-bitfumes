@@ -18,6 +18,8 @@ export class BooksComponent implements OnInit{
   name2 : string = 'Effective Java';
   author2 : string = 'Joshua Bloch';
 
+  isDisabled : boolean = false;
+
   constructor(){}
 
   ngOnInit(): void {
