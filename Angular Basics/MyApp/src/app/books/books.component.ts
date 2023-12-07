@@ -26,6 +26,10 @@ export class BooksComponent implements OnInit{
     
   }
   
+  handleClick(): void {
+    this.isDisabled = true;
+  }
+  
 
 
 }
