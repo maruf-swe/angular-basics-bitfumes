@@ -15,4 +15,6 @@ export class BooksComponent implements OnInit{
     
   }
 
+  author : string = "Maruf";
+
 }
