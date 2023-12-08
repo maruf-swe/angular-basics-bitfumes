@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './books.component.html',
   styleUrl: './books.component.css'
 })
@@ -30,8 +31,9 @@ export class BooksComponent implements OnInit{
     this.isDisabled = true;
   }
   
+  myName :string = '';
   handleInput(event: any){
-    console.log(event.target.value);
+    this.myName = event.target.value;
   }
   
 
