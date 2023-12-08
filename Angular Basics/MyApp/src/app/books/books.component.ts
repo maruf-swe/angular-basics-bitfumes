@@ -30,6 +30,10 @@ export class BooksComponent implements OnInit{
     this.isDisabled = true;
   }
   
+  handleInput(event: any){
+    console.log(event.target.value);
+  }
+  
 
 
 }
