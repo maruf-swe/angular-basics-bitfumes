@@ -19,23 +19,14 @@ export class BooksComponent implements OnInit{
   name2 : string = 'Effective Java';
   author2 : string = 'Joshua Bloch';
 
-  isDisabled : boolean = false;
+  isShowing : boolean = true;
 
   constructor(){}
 
   ngOnInit(): void {
     
   }
-  
-  handleClick(): void {
-    this.isDisabled = true;
-  }
-  
-  myName :string = '';
-  handleInput(event: any){
-    this.myName = event.target.value;
-  }
-  
+
 
 
 }
