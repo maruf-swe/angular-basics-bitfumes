@@ -1,7 +1,7 @@
 <p>Programming Books List!!</p>
-<button >Show Books</button>
+<button (click)="isShowing = !isShowing">Show Books</button>
 
-<ul>
+<ul *ngIf="isShowing">
     <li>
         <img [src]="src" alt="" width="100"/>
         {{ name }} by {{ author }}
